@@ -21,5 +21,6 @@ urlpatterns = [
     #    path('admin/', admin.site.urls),
     path('', views.base),
     path('index', views.base),
-    path('voir', views.voir_soldat),
+    path('voir', views.voir_soldat, name="voir_soldat"),
+    path('creer', views.creer_soldat, name="creer_soldat"),
 ]
