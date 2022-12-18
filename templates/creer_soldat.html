@@ -2,8 +2,8 @@
 {% block content %}
     <form method="POST" action="{% url "creer_soldat" %}">
     {% csrf_token %}
-        {{ formulaire.as_p }}
-        <input type="submit" value="Créer"><br><br>
-        </form>
-    <a href="{% url "voir_soldat" %}">Afficher les soldats</a>
+            {{ formulaire.as_p }}
+            <input type="submit" value="Créer">
+        </form><br><br>
+        <a href="{% url "voir_soldat" %}">Afficher les soldats</a>
 {% endblock %}

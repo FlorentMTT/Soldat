@@ -12,7 +12,7 @@ def voir_soldat(request):
     return render(request, "voir_soldat.html", contenu)
 
 def creer_soldat(request):
-    if  request == "POST":
+    if request.method == "POST":
         form = FormAjouterSoldat(request.POST)
         if form.is_valid():
             nouveau_soldat = Soldat()
