@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <table>
+        <thead>
+            <th>Nom:</th>
+            <th>Grade:</th>
+            <th>Specialite:</th>
+        </thead>
+        {% for soldat in soldats %}
+        <tr>
+            <td> {{ soldat.nom }}</td>
+            <td> {{ soldat.grade }}</td>
+            <td> {{ soldat.specialite }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
